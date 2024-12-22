@@ -338,4 +338,5 @@ Untuk memastikan keamanan aplikasi web yang saya host, saya melakukan beberapa t
 
 ## License
 
-Distributed under the MIT License. See [MIT License](LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
+
