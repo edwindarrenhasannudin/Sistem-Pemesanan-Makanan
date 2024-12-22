@@ -321,6 +321,21 @@ Untuk memastikan keamanan aplikasi web yang saya host, saya melakukan beberapa t
     - Vercel menggunakan serverless architecture, yang berarti aplikasi akan dijalankan pada server yang diatur secara otomatis oleh Vercel, dan dapat menangani skalabilitas aplikasi sesuai dengan jumlah traffic yang masuk.
     - Jika aplikasi menggunakan backend atau API, Vercel dapat mengonfigurasi **serverless functions** yang menangani endpoint-API secara otomatis, tanpa perlu konfigurasi server tradisional.
     - Optimasi Performance: Vercel secara otomatis melakukan optimasi aplikasi untuk mengurangi waktu loading dan memberikan pengalaman pengguna yang lebih baik. Hal ini termasuk pengoptimalan gambar, pengelolaan cache, dan penyajian data dari server terdekat (edge network).
+
+## Teknologi yang Digunakan
+- **PHP**: Digunakan untuk logika server-side dan pengolahan data.
+- **MySQL**: Digunakan untuk menyimpan data pesanan.
+- **CSS**: Digunakan untuk mendesain tampilan dan membuat halaman responsif.
+- **HTML**: Digunakan untuk struktur dasar halaman web.
+
+## Instalasi
+
+1. Pastikan Anda memiliki server web dengan PHP dan MySQL (misalnya XAMPP atau LAMP).
+2. Clone atau salin file proyek ini ke dalam folder proyek pada server Anda.
+3. Buat database MySQL baru dan impor file database yang sesuai untuk membuat tabel `orders`.
+4. Konfigurasikan file `db_config.php` dengan informasi koneksi database Anda.
+5. Akses aplikasi melalui browser pada `localhost` atau alamat server Anda.
+
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [MIT License](LICENSE) for more information.
