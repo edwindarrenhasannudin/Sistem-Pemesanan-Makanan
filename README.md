@@ -262,4 +262,62 @@ localStorage.setItem("user", "JohnDoe");
 // Get item from localStorage
 let user = localStorage.getItem("user");
 ```
-```
+### Bagian Bonus: Hosting Aplikasi Web
+1. **Langkah-langkah untuk Meng-host Aplikasi Web**:
+Untuk meng-host aplikasi web, saya mengikuti langkah-langkah berikut:
+
+    1. **Persiapkan Proyek**: Pastikan aplikasi web siap dan memiliki struktur file yang benar, seperti HTML, CSS, JavaScript, dan backend (jika ada). Pastikan aplikasi berjalan dengan baik di lingkungan lokal.
+
+    2. **Membuat Repository GitHub**: Proyek saya dimasukkan ke dalam repository GitHub. Setiap perubahan yang saya buat pada proyek akan di-push ke GitHub.
+
+    3. **Pengaturan Hosting di GitHub Pages**:
+
+        - Masuk ke GitHub dan buka repository yang berisi aplikasi web.
+        - Pergi ke tab "Settings" pada repository dan pilih bagian GitHub Pages.
+        - Pilih branch yang berisi aplikasi (biasanya main atau gh-pages) dan simpan.
+        - Setelah itu, URL aplikasi akan tersedia di halaman GitHub Pages.
+    4. Menggunakan Vercel:
+
+        - Masuk ke Vercel dan hubungkan akun GitHub saya.
+        - Pilih repository yang ingin di-deploy ke Vercel.
+        - Vercel akan otomatis mendeteksi framework yang digunakan dan menjalankan proses deployment.
+        - Setelah proses selesai, link aplikasi yang ter-host akan tersedia, dan aplikasi dapat diakses online.
+2. **Penyedia Hosting Web yang Paling Cocok untuk Aplikasi Web**:
+
+    Saya memilih **Vercel** sebagai penyedia hosting yang paling cocok untuk aplikasi web saya. Alasan memilih Vercel adalah:
+
+    - Kemudahan Integrasi dengan GitHub: Vercel menyediakan integrasi langsung dengan GitHub, memungkinkan deployment otomatis setiap kali ada perubahan pada repository.
+    - Dukungan untuk Framework Modern: Vercel mendukung berbagai framework JavaScript, termasuk React dan Next.js, yang sangat cocok untuk aplikasi berbasis JavaScript.
+    - Skalabilitas dan Kinerja: Vercel memiliki infrastruktur yang dioptimalkan untuk hosting aplikasi web yang membutuhkan kinerja tinggi dan skalabilitas.
+    - Penyediaan Domain Gratis: Vercel menawarkan domain gratis dengan konfigurasi yang sangat mudah untuk aplikasi yang di-deploy.
+
+    Sebagai alternatif, **GitHub Pages** juga dapat digunakan untuk hosting aplikasi web statis (HTML, CSS, JavaScript) dengan cara yang mudah dan cepat.
+
+3. **Cara Memastikan Keamanan Aplikasi Web yang Dihost**:
+Untuk memastikan keamanan aplikasi web yang saya host, saya melakukan beberapa tindakan berikut:
+
+    1. **Penggunaan HTTPS**:
+
+        - Vercel dan GitHub Pages secara otomatis menyediakan sertifikat SSL dan mengaktifkan HTTPS untuk memastikan komunikasi yang aman antara server dan pengguna.
+    2. **Validasi Input Pengguna**:
+
+        - Di sisi frontend dan backend, saya memastikan semua input dari pengguna divalidasi untuk mencegah serangan seperti SQL injection atau XSS (Cross-Site Scripting).
+    3. **Penyimpanan Data Sensitif dengan Aman**:
+
+        - Jika aplikasi mengelola data sensitif (misalnya, kredensial pengguna), saya menggunakan enkripsi untuk menyimpan data dan menghindari penyimpanan data sensitif dalam format teks biasa.
+    4. **Update Reguler dan Keamanan Dependency**:
+
+        - Memastikan aplikasi dan dependensinya selalu terbarui dengan versi terbaru yang memperbaiki potensi kerentanannya.
+    5. **Penggunaan Variabel Lingkungan (Environment Variables)**:
+
+        - Saya menggunakan variabel lingkungan untuk menyimpan data sensitif, seperti API keys atau kredensial database, yang tidak boleh dipublikasikan di dalam kode sumber.
+4. **Konfigurasi Server yang Diterapkan untuk Mendukung Aplikasi Web**:
+- **GitHub Pages**:
+
+    - GitHub Pages menyediakan hosting untuk aplikasi statis, sehingga tidak memerlukan konfigurasi server. Aplikasi akan di-render langsung dari file HTML, CSS, dan JavaScript yang ada di repository GitHub.
+    - GitHub Pages menggunakan CDN (Content Delivery Network) untuk distribusi konten, yang meningkatkan kecepatan dan performa.
+- **Vercel**:
+
+    - Vercel menggunakan serverless architecture, yang berarti aplikasi akan dijalankan pada server yang diatur secara otomatis oleh Vercel, dan dapat menangani skalabilitas aplikasi sesuai dengan jumlah traffic yang masuk.
+    - Jika aplikasi menggunakan backend atau API, Vercel dapat mengonfigurasi **serverless functions** yang menangani endpoint-API secara otomatis, tanpa perlu konfigurasi server tradisional.
+    - Optimasi Performance: Vercel secara otomatis melakukan optimasi aplikasi untuk mengurangi waktu loading dan memberikan pengalaman pengguna yang lebih baik. Hal ini termasuk pengoptimalan gambar, pengelolaan cache, dan penyajian data dari server terdekat (edge network).
