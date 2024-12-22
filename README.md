@@ -321,3 +321,6 @@ Untuk memastikan keamanan aplikasi web yang saya host, saya melakukan beberapa t
     - Vercel menggunakan serverless architecture, yang berarti aplikasi akan dijalankan pada server yang diatur secara otomatis oleh Vercel, dan dapat menangani skalabilitas aplikasi sesuai dengan jumlah traffic yang masuk.
     - Jika aplikasi menggunakan backend atau API, Vercel dapat mengonfigurasi **serverless functions** yang menangani endpoint-API secara otomatis, tanpa perlu konfigurasi server tradisional.
     - Optimasi Performance: Vercel secara otomatis melakukan optimasi aplikasi untuk mengurangi waktu loading dan memberikan pengalaman pengguna yang lebih baik. Hal ini termasuk pengoptimalan gambar, pengelolaan cache, dan penyajian data dari server terdekat (edge network).
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
