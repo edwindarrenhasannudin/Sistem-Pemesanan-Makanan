@@ -276,29 +276,46 @@ Untuk meng-host aplikasi web, saya mengikuti langkah-langkah berikut:
         - Pergi ke tab "Settings" pada repository dan pilih bagian GitHub Pages.
         - Pilih branch yang berisi aplikasi (biasanya main atau gh-pages) dan simpan.
         - Setelah itu, URL aplikasi akan tersedia di halaman GitHub Pages.
-    4. Menggunakan Vercel:
+    
+    **Berikut link Github Pages** : [sistem pemesanan makanan](https://edwindarrenhasannudin.github.io/Sistem-Pemesanan-Makanan/)
+    
+    4. **Menggunakan Vercel**:
 
         - Masuk ke Vercel dan hubungkan akun GitHub saya.
         - Pilih repository yang ingin di-deploy ke Vercel.
         - Vercel akan otomatis mendeteksi framework yang digunakan dan menjalankan proses deployment.
         - Setelah proses selesai, link aplikasi yang ter-host akan tersedia, dan aplikasi dapat diakses online.
+
+    **Berikut link Vercel** : [sistem pemesanan makanan](https://sistem-pemesanan-makanan.vercel.app/)
+
+    5. **Hosting dengan InfinityFree (Mendukung Backend dan Database)**:
+
+        - Daftar Akun: Buat akun di InfinityFree.
+        - Upload Proyek: Gunakan file manager bawaan atau FTP client seperti FileZilla untuk mengunggah file proyek Anda.
+        - Konfigurasi Database:
+            - Buat database melalui menu MySQL Databases di cPanel InfinityFree.
+            - Hubungkan aplikasi ke database dengan memperbarui file konfigurasi backend (misalnya db_config.php).
+        - Akses URL Hosting: Setelah file dan database berhasil dikonfigurasi, aplikasi dapat diakses melalui domain gratis yang disediakan InfinityFree.
+      
+    **Berikut link Infinity Free** : [sistem pemesanan makanan](http://sistem-pemesanan-makanan.wuaze.com/)
 2. **Penyedia Hosting Web yang Paling Cocok untuk Aplikasi Web**:
 
-    Saya memilih **Vercel** sebagai penyedia hosting yang paling cocok untuk aplikasi web saya. Alasan memilih Vercel adalah:
+    Saya memilih **InfinityFree** sebagai penyedia hosting yang paling cocok untuk aplikasi web saya. Alasan memilih InfinityFree adalah:
 
-    - Kemudahan Integrasi dengan GitHub: Vercel menyediakan integrasi langsung dengan GitHub, memungkinkan deployment otomatis setiap kali ada perubahan pada repository.
-    - Dukungan untuk Framework Modern: Vercel mendukung berbagai framework JavaScript, termasuk React dan Next.js, yang sangat cocok untuk aplikasi berbasis JavaScript.
-    - Skalabilitas dan Kinerja: Vercel memiliki infrastruktur yang dioptimalkan untuk hosting aplikasi web yang membutuhkan kinerja tinggi dan skalabilitas.
-    - Penyediaan Domain Gratis: Vercel menawarkan domain gratis dengan konfigurasi yang sangat mudah untuk aplikasi yang di-deploy.
+    - Dukungan Backend: InfinityFree mendukung aplikasi berbasis backend dengan PHP dan MySQL, memungkinkan pengelolaan database untuk kebutuhan aplikasi dinamis.
+    - Tanpa Biaya: InfinityFree menawarkan hosting gratis tanpa batas waktu, yang sangat membantu untuk proyek kecil dan menengah.
+    - cPanel Gratis: InfinityFree menyediakan kontrol penuh melalui cPanel untuk manajemen file, domain, dan database dengan antarmuka yang mudah digunakan.
+    - Dukungan Domain Gratis: InfinityFree menawarkan subdomain gratis atau memungkinkan Anda untuk menghubungkan custom domain Anda sendiri tanpa biaya tambahan.
+    - Kapasitas Penyimpanan Besar: InfinityFree menyediakan penyimpanan besar (hingga 5GB), cukup untuk mendukung berbagai jenis aplikasi web.
 
-    Sebagai alternatif, **GitHub Pages** juga dapat digunakan untuk hosting aplikasi web statis (HTML, CSS, JavaScript) dengan cara yang mudah dan cepat.
+    Sebagai alternatif, GitHub Pages atau Vercel juga dapat digunakan untuk hosting aplikasi web statis dan serverless dengan cara yang mudah dan cepat.
 
 3. **Cara Memastikan Keamanan Aplikasi Web yang Dihost**:
 Untuk memastikan keamanan aplikasi web yang saya host, saya melakukan beberapa tindakan berikut:
 
     1. **Penggunaan HTTPS**:
 
-        - Vercel dan GitHub Pages secara otomatis menyediakan sertifikat SSL dan mengaktifkan HTTPS untuk memastikan komunikasi yang aman antara server dan pengguna.
+        - Vercel, InfinityFree dan GitHub Pages secara otomatis menyediakan sertifikat SSL dan mengaktifkan HTTPS untuk memastikan komunikasi yang aman antara server dan pengguna.
     2. **Validasi Input Pengguna**:
 
         - Di sisi frontend dan backend, saya memastikan semua input dari pengguna divalidasi untuk mencegah serangan seperti SQL injection atau XSS (Cross-Site Scripting).
@@ -311,7 +328,7 @@ Untuk memastikan keamanan aplikasi web yang saya host, saya melakukan beberapa t
     5. **Penggunaan Variabel Lingkungan (Environment Variables)**:
 
         - Saya menggunakan variabel lingkungan untuk menyimpan data sensitif, seperti API keys atau kredensial database, yang tidak boleh dipublikasikan di dalam kode sumber.
-4. **Konfigurasi Server yang Diterapkan untuk Mendukung Aplikasi Web**:
+5. **Konfigurasi Server yang Diterapkan untuk Mendukung Aplikasi Web**:
 - **GitHub Pages**:
 
     - GitHub Pages menyediakan hosting untuk aplikasi statis, sehingga tidak memerlukan konfigurasi server. Aplikasi akan di-render langsung dari file HTML, CSS, dan JavaScript yang ada di repository GitHub.
@@ -321,6 +338,19 @@ Untuk memastikan keamanan aplikasi web yang saya host, saya melakukan beberapa t
     - Vercel menggunakan serverless architecture, yang berarti aplikasi akan dijalankan pada server yang diatur secara otomatis oleh Vercel, dan dapat menangani skalabilitas aplikasi sesuai dengan jumlah traffic yang masuk.
     - Jika aplikasi menggunakan backend atau API, Vercel dapat mengonfigurasi **serverless functions** yang menangani endpoint-API secara otomatis, tanpa perlu konfigurasi server tradisional.
     - Optimasi Performance: Vercel secara otomatis melakukan optimasi aplikasi untuk mengurangi waktu loading dan memberikan pengalaman pengguna yang lebih baik. Hal ini termasuk pengoptimalan gambar, pengelolaan cache, dan penyajian data dari server terdekat (edge network).
+- **InfinityFree**:
+
+    - **PHP dan MySQL**: Mendukung backend dengan PHP dan koneksi ke database MySQL.
+    - **File Upload**: Gunakan folder htdocs untuk menyimpan file aplikasi.
+    - **Database Configuration**: Sesuaikan kredensial database di file konfigurasi seperti berikut:
+      ```
+      $servername = "sqlXXX.epizy.com";
+      $username = "epiz_XXXXX";
+      $password = "your_password";
+      $dbname = "epiz_XXXXX_database";
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      ```
+    - **cPanel**: InfinityFree menyediakan kontrol penuh melalui cPanel untuk konfigurasi tambahan.
 
 ## Teknologi yang Digunakan
 - **PHP**: Digunakan untuk logika server-side dan pengolahan data.
