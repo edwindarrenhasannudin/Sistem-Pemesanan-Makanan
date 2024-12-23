@@ -1,91 +1,92 @@
 /* Styling untuk body halaman */
 body {
     font-family: Arial, sans-serif; /* Mengatur font */
-    margin: 20px; /* Menambahkan jarak sekitar halaman */
-    line-height: 1.6; /* Menentukan jarak antar baris teks */
-    background-color: #f0f8ff; /* Warna latar belakang halaman */
-    color: #333; /* Warna teks */
+    margin: 20px; /* Menambahkan jarak sekitar halaman */ 
+    line-height: 1.6; /* Menentukan jarak antar baris teks */ 
+    background-color: #f0f8ff; /* Warna latar belakang halaman */ 
+    color: #333; /* Warna teks */ 
 }
 
 /* Styling untuk box judul */
 .title-box {
     background-color: #007BFF; /* Warna biru untuk latar belakang */
-    text-align: center; /* Menyusun teks di tengah */
-    color: yellow; /* Warna teks kuning */
-    border-radius: 8px; /* Membuat sudut melengkung */
-    font-family: Arial, sans-serif; /* Menentukan font */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
-    margin: 20px 430px; /* Menentukan jarak sekitar box */
+    text-align: center; /* Menyusun teks di tengah */ 
+    color: yellow; /* Warna teks kuning */ 
+    border-radius: 8px; /* Membuat sudut kotak melengkung */
+    text-align: center; /* Pusatkan teks */
+    font-family: Arial, sans-serif; /* Pilihan font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk estetika */
+    margin: 20px 430px ; /* Menentukan jarak sekitar box */ 
 }
 
 /* Styling untuk container yang memuat elemen form dan gambar */
 .container {
-    display: flex; /* Menggunakan flexbox */
-    justify-content: center; /* Menjaga elemen form dan gambar di tengah secara horizontal */
-    align-items: center; /* Menjaga elemen di tengah secara vertikal */
+    display: flex; /* Menggunakan flexbox */ 
+    justify-content: center; /* Menjaga form dan gambar di tengah */
+    align-items: center; /* Menjaga form dan gambar berada di tengah secara vertikal */
 }
 
 /* Styling untuk container gambar di kiri */
 .left-images {
-    display: flex; /* Menggunakan flexbox */
+    display: flex; /* Menggunakan flexbox */ 
     flex-direction: column; /* Menyusun gambar secara vertikal */
     gap: 20px; /* Jarak antar gambar */
-    margin-left: 60px; /* Jarak kiri */
+    margin-left: 60px; /* Jarak kiri */ 
 }
 
 /* Styling untuk container gambar di kanan */
 .right-images {
-    display: flex; /* Menggunakan flexbox */
-    flex-direction: column; /* Menyusun gambar secara vertikal */
-    gap: 20px; /* Jarak antar gambar */
-    margin-right: 60px; /* Jarak kanan */
+  display: flex; /* Menggunakan flexbox */ 
+  flex-direction: column; /* Menyusun gambar secara vertikal */
+  gap: 20px; /* Jarak antar gambar */
+  margin-right: 60px; /* Jarak kanan */ 
 }
 
 /* Styling untuk form */
 form {
-    background-color: #ffffff; /* Warna latar belakang form */
-    border: 1px solid #0047ab; /* Menambahkan border biru */
+    background-color: #ffffff; /* Warna latar belakang form */ 
+    border: 1px solid #0047ab; /* Menambahkan border biru */ 
     border-radius: 8px; /* Membuat sudut melengkung */
-    padding: 20px; /* Menambahkan padding */
-    width: 400px; /* Menentukan lebar form */
-    margin: auto; /* Menjaga form tetap di tengah */
+    padding: 20px; /* Menambahkan padding */ 
+    width: 400px; /* Menentukan lebar form */ 
+    margin: auto; /* Menjaga form tetap di tengah */ 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan pada form */
 }
 
 /* Styling untuk grup input dalam form */
 .form-group {
-    margin-bottom: 15px; /* Jarak antar grup input */
+    margin-bottom: 15px; /* Jarak antar grup input */ 
 }
 
 /* Styling untuk gambar kiri dan kanan */
 .img-left, .img-right {
-    width: 350px; /* Menentukan lebar gambar */
+    width: 350px; /* Menentukan ukuran gambar */
     height: auto; /* Menjaga proporsi gambar */
-    border-radius: 10px; /* Membuat sudut gambar melengkung */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */ 
 }
 
 /* Styling untuk label */
 label {
-    display: block; /* Mengatur label sebagai blok */
-    font-weight: bold; /* Membuat teks label tebal */
-    color: #0047ab; /* Warna teks biru */
-    margin-bottom: 5px; /* Jarak bawah label */
+    display: block; /* Mengatur label sebagai blok */ 
+    font-weight: bold; /* Membuat teks label tebal */ 
+    color: #0047ab; /* Warna teks biru */ 
+    margin-bottom: 5px; /* Jarak bawah label */ 
 }
 
 /* Styling untuk input tipe teks, nomor, select, dan password */
 input[type="text"], input[type="number"], select, input[type="password"] {
-    width: 100%; /* Lebar input penuh */
-    padding: 8px; /* Padding di dalam input */
-    margin-top: 5px; /* Jarak atas input */
-    border: 1px solid #ccc; /* Border abu-abu */
-    border-radius: 4px; /* Sudut input melengkung */
-    box-sizing: border-box; /* Menghitung padding dalam ukuran input */
+    width: 100%; /* Lebar input penuh */ 
+    padding: 8px; /* Padding di dalam input */ 
+    margin-top: 5px; /* Jarak atas input */ 
+    border: 1px solid #ccc; /* Border abu-abu */ 
+    border-radius: 4px; /* Sudut input melengkung */ 
+    box-sizing: border-box; /* Menghitung padding dalam ukuran input */ 
 }
 
 /* Styling untuk grup checkbox dan radio */
 .checkbox-group, .radio-group {
-    display: flex; /* Menggunakan flexbox */
-    align-items: center; /* Menyusun input checkbox/radio secara vertikal */
+    display: flex; /* Menggunakan flexbox */ 
+    align-items: center; /* Menyelaraskan teks dan input secara vertikal */
     margin-bottom: 4px; /* Mengurangi jarak antar pilihan */
 }
 
@@ -97,85 +98,95 @@ input[type="text"], input[type="number"], select, input[type="password"] {
     top: -3px; /* Sedikit menaikkan posisi input */
 }
 
+/* Styling untuk label */
+label {
+    margin: 0; /* Menghapus margin bawaan */
+    line-height: 1.2; /* Menyusun teks lebih rapat */
+}
+
+.form-group label {
+    margin-bottom: 4px; /* Mengurangi jarak antara label dan pilihan */
+}
+
 /* Styling untuk tombol button */
 button {
-    background-color: #0047ab; /* Warna latar belakang biru */
-    color: white; /* Warna teks putih */
-    padding: 10px 15px; /* Padding dalam tombol */
-    border: none; /* Menghapus border */
-    border-radius: 4px; /* Sudut tombol melengkung */
-    cursor: pointer; /* Menambahkan pointer saat hover */
+    background-color: #0047ab; /* Warna latar belakang biru */ 
+    color: white; /* Warna teks putih */ 
+    padding: 10px 15px; /* Padding dalam tombol */ 
+    border: none; /* Menghapus border */ 
+    border-radius: 4px; /* Sudut tombol melekung */ 
+    cursor: pointer; /* Menambahkan pointer saat hover */ 
     font-size: 16px; /* Ukuran font */
 }
 
 /* Styling saat tombol button dihover */
 button:hover {
-    background-color: #003380; /* Ubah warna saat hover */
+    background-color: #003380; /* Ubah warna saat hover */ 
 }
 
 /* Styling untuk tombol logout */
 .btn-logout {
     background-color: #f44336; /* Warna merah */
-    color: white; /* Warna teks putih */
-    padding: 10px 15px; /* Padding dalam tombol */
-    text-align: center; /* Teks tombol di tengah */
-    text-decoration: none; /* Menghapus garis bawah */
+    color: white; /* Warna teks putih */ 
+    padding: 10px 15px; /* Padding dalam tombol */ 
+    text-align: center; /* Teks tombol di tengah */ 
+    text-decoration: none; /* Menghapus garis bawah */ 
     font-size: 16px; /* Ukuran font */
-    border-radius: 4px; /* Sudut tombol melengkung */
-    margin-top: 20px; /* Jarak atas tombol */
-    margin-left: 30px; /* Jarak kiri tombol */
-    transition: background-color 0.3s; /* Transisi warna background */
+    border-radius: 4px; /* Sudut tombol melengkung */ 
+    margin-top: 20px; /* Jarak antar tombol */ 
+    margin-left: 30px; /* Jarak kiri tombol */ 
+    transition: background-color 0.3s; /* Transisi warna background */ 
 }
 
 /* Styling saat tombol logout dihover */
 .btn-logout:hover {
-    background-color: #d32f2f; /* Ubah warna saat hover */
+    background-color: #d32f2f; /* Ubah warna saat hover */ 
 }
 
 /* Styling untuk tombol kembali */
 .btn-back {
     background-color: #f44336; /* Warna merah */
-    color: white; /* Warna teks putih */
-    padding: 10px 15px; /* Padding dalam tombol */
-    text-align: center; /* Teks tombol di tengah */
-    text-decoration: none; /* Menghapus garis bawah */
+    color: white; /* Warna teks putih */ 
+    padding: 10px 15px; /* Padding dalam tombol */ 
+    text-align: center; /* Teks tombol di tengah */ 
+    text-decoration: none; /* Menghapus garis bawah */ 
     font-size: 16px; /* Ukuran font */
-    border-radius: 4px; /* Sudut tombol melengkung */
-    margin-top: 20px; /* Jarak atas tombol */
-    transition: background-color 0.3s; /* Transisi warna background */
+    border-radius: 4px; /* Sudut tombol melengkung */ 
+    margin-top: 20px; /* Jarak atas tombol */ 
+    transition: background-color 0.3s; /* Transisi warna background */ 
 }
 
 /* Styling saat tombol kembali dihover */
 .btn-back:hover {
-    background-color: #d32f2f; /* Ubah warna saat hover */
+    background-color: #d32f2f; /* Ubah warna saat dihover */ 
 }
 
 /* Styling untuk pesan error */
 p {
     text-align: center; /* Teks berada di tengah */
     font-size: 14px; /* Ukuran font */
-    color: red; /* Warna merah untuk error */
+    color: red; /* Warna merah untuk error */ 
 }
 
-/* Styling untuk pesan error global */
+/* Styling untuk halaman ketika error muncul */
 .error {
-    color: red; /* Warna merah */
+    color: red; /* Warna merah */ 
     font-size: 14px; /* Ukuran font */
-    text-align: center; /* Teks di tengah */
+    text-align: center; /* Teks di tengah */ 
 }
 
 /* Styling untuk tabel pesanan */
 table {
-    width: 100%; /* Tabel lebar penuh */
-    border-collapse: collapse; /* Menghilangkan jarak antar sel */
-    margin-top: 30px; /* Jarak atas tabel */
+    width: 100%; /* Tabel lebar penuh */ 
+    border-collapse: collapse; /* Menghilangkan jarak antar sel */ 
+    margin-top: 30px; /* Jarak atas tabel */ 
 }
 
 /* Styling untuk header dan sel tabel */
 th, td {
-    border: 1px solid #ddd; /* Border abu-abu */
-    padding: 8px; /* Padding dalam sel */
-    text-align: center; /* Teks di tengah */
+    border: 1px solid #ddd; /* Border abu-abu */ 
+    padding: 8px; /* Padding dalam sel */ 
+    text-align: center; /* Teks di tengah */ 
 }
 
 /* Styling untuk header tabel */
@@ -234,6 +245,7 @@ th {
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transisi animasi */
 }
 
+/* Warna dan desain untuk setiap tipe notifikasi */
 /* Styling untuk notifikasi success */
 .notification.success {
     background-color: #4caf50; /* Warna hijau */
