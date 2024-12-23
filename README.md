@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->query($query);
 }
 ```
-### 2.2 Objek PHP Berbasis OOP (10%)
+### 2.2 Objek PHP Berbasis OOP 
 Aplikasi ini menggunakan konsep Object-Oriented Programming (OOP) di PHP dengan membuat kelas Mahasiswa yang memiliki minimal dua metode.
 
 ### Contoh Kelas PHP:
