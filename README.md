@@ -297,7 +297,7 @@ Untuk meng-host aplikasi web, saya mengikuti langkah-langkah berikut:
             - Hubungkan aplikasi ke database dengan memperbarui file konfigurasi backend (misalnya db_config.php).
         - Akses URL Hosting: Setelah file dan database berhasil dikonfigurasi, aplikasi dapat diakses melalui domain gratis yang disediakan InfinityFree.
       
-    **Berikut link Infinity Free** : [sistem pemesanan makanan](http://sistem-pemesanan-makanan.wuaze.com/)
+    **Berikut link Infinity Free** : [sistem pemesanan makanan](http://sistem-pesan-makanan.freesite.online/)
 2. **Penyedia Hosting Web yang Paling Cocok untuk Aplikasi Web**:
 
     Saya memilih **InfinityFree** sebagai penyedia hosting yang paling cocok untuk aplikasi web saya. Alasan memilih InfinityFree adalah:
